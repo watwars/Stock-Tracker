@@ -1,0 +1,40 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <title>Stocks Tracker</title>
+</head>
+<body>
+    <div class="settings-header">
+        <h1>Settings for <em><span id="settings-user"></span></em></h1>
+    </div>
+    <div class="interests-main-content">
+        <div class="left-interests">
+            <h3>Add a new stock to your interests</h2>
+            <form autocomplete="off" id="add-interest" class="form-group add-interest-form">
+                <div class="autocomplete">
+                    <input class="form-control" type="text" id="stock" name="stock" placeholder="Stock Symbol...">
+                </div>
+                <input type="submit" class="form-control" value="Search Stock">
+            </form>
+            <div id="spinner"></div>
+            <div id="potential-interests"></div>
+        </div>
+        <div class="right-interests">
+            <h3>Your current interested stocks: </h2>
+            <div class="interests">
+                <ul id="interests"></ul>
+            </div>
+        </div>
+    </div>
+    <div class="buttons-settings">
+        <button id="delete-account" class="btn btn-danger">Delete account</button>
+        <button class="btn btn-info"><a href="index.html" style="color:white">Back to Homepage</a></button>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="settings.js"></script>
+</body>
+</html>

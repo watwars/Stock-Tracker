@@ -1,0 +1,201 @@
+
+.landing {
+    width: 100%;
+    height: 100%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.landing h1 {
+    height: 300px;
+    font-size: 50px;
+    padding-top: 25%;
+    padding-right: 100px;
+    border-right: 1px solid gray;
+    text-decoration: underline;
+}
+
+.landing button {
+    margin-left: 100px;
+    margin-bottom: 20px;
+    width: 150px;
+}
+
+.main-content {
+    display: none;
+}
+
+.message {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#show-stocks {
+    width: 100%;
+    text-align: center;
+}
+
+#show-stocks thead {
+    border: 2px solid black;
+}
+
+#show-stocks tr {
+    height: 35px;
+}
+
+.contain {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80% !important;
+    margin-top: 20px;
+}
+
+.contain-heading {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contain-buttons button {
+    margin-left: 10px;
+}
+
+
+/* ================================================== */
+/*              Sign up and sign in pages             */
+/* ================================================== */
+.register-page, .login-page{
+    margin: auto;
+    text-align: center;
+    width: 50%;
+}
+
+.register-page h1, .login-page h1 {
+    font-size: 30px;
+    margin-top: 100px;
+}
+
+.register-page input, .login-page input{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    width: 50% !important;
+}
+
+
+/* ================================================== */
+/*                   Settings page                    */
+/* ================================================== */
+
+/* Spinner  */
+#spinner {
+    visibility: hidden;
+    width: 80px;
+    height: 80px;
+
+    border: 2px solid #f3f3f3;
+    border-top: 3px solid #f25a41;
+    border-radius: 100%;
+
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin:auto;
+
+    animation: spin 1s infinite linear;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.spinner-show {
+    visibility: visible !important;
+}
+
+/* End here */
+
+
+
+.interests-main-content {
+    margin: 30px;
+    margin-left: 80px;
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
+
+.left-interests {
+    flex-basis: 40%;
+}
+
+.right-interests {
+    flex-basis: 60%;
+}
+
+.right-interests h2 {
+    margin-bottom: 20px;
+}
+
+.right-interests ul {
+    font-size: 20px;
+}
+
+.sinterest {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    margin-top: 10px;
+}
+
+.removeinterest {
+    font-size: 10px !important;
+}
+
+.add-interest-form {
+    width: 50%;
+}
+.add-interest-form input {
+    margin-top: 20px;
+}
+
+
+#potential-interests {
+    display: flex;
+    flex-direction: column;
+}
+
+.pstock {
+    border: none !important;
+    outline: none;
+    height: 30px;
+    width: 300px; 
+    background-color: rgb(221, 230, 209);
+    margin-top: 20px;
+    border-radius: 2px;
+}
+.pmessage {
+    font-size: 20px;
+}
+
+.buttons-settings {
+    margin-left: 80px;
+}
+
+.buttons-settings button {
+    margin-right: 20px;
+}
+
+.settings-header{
+    margin-left: 80px;
+    margin-top: 30px;
+}

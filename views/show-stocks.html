@@ -1,0 +1,37 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="show.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <title>Stocks Tracker</title>
+</head>
+<body>
+    <div class="contain">
+        <h1>More info about <em><span id="stock-name"></span></em></h1>
+        <br>
+        <div class="recommendation">
+            <p><span id="recommendation-name"></span> Current Recommendations: </p>
+            <table style="margin-bottom: 15px;">
+                <tr>
+                    <td>Legend: </td>
+                    <td><span class="circle" style="background-color: #813231"></span>Strong Sell</td>
+                    <td><span class="circle" style="background-color: #f45b5b"></span>Sell</td>
+                    <td><span class="circle" style="background-color: #b98b1d"></span>Hold</td>
+                    <td><span class="circle" style="background-color: #2cb954"></span>Buy</td>
+                    <td><span class="circle" style="background-color: #186f37"></span>Strong Buy</td>
+                </tr>
+            </table>
+            <div class="bar ind-bar" id="bar"></div>
+            <small>Date: <span id="recommendation-date"></span></small>  
+        </div>
+        <br>
+        <div class="news" id="news">
+            <p id="news-title"></p>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="moreinfo.js"></script>
+</body>
+</html>
